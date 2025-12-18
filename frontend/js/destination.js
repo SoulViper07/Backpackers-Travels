@@ -15,11 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchDestinationDetails(name) {
-    console.log("Fetching details for:", name); // for debugging
     const loader = document.getElementById('details-loader');
     const content = document.getElementById('destination-content');
 
-    fetch(`${API_URL}/places/${name}`)
+    fetch(`${API_URL}/api/places/${name}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Destination not found');
