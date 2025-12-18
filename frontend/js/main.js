@@ -6,7 +6,7 @@ JS Enhancements for Backpackers Travels
 - Ripple effect for buttons
 --- */
 
-const API_URL = 'https://<YOUR_BACKEND_URL>'; // Base URL for the backend
+const API_URL = 'https://backpackers-travels.onrender.com'; // Base URL for the backend
 
 // --- 1. CORE LOGIC: Fetching destination data ---
 

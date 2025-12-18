@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 chatBox.appendChild(loadingBubble);
                 chatBox.scrollTop = chatBox.scrollHeight;
 
-                const response = await fetch('https://<YOUR_CHATBOT_URL>/chat', { // Assuming Flask runs on 5000
+                const response = await fetch('https://backpackers-travels-chatbot.onrender.com/chat', { // Assuming Flask runs on 5000
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!faqList) return; // Ensure faqList element exists
         faqList.innerHTML = '<div class="loading-message" style="color: #00bcd4; text-align: center;">Loading FAQs...</div>';
         try {
-            const response = await fetch('https://<YOUR_CHATBOT_URL>/faqs');
+            const response = await fetch('https://backpackers-travels-chatbot.onrender.com/faqs');
             const faqs = await response.json();
             faqList.innerHTML = ''; // Clear loading message
 

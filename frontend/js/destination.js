@@ -1,4 +1,4 @@
-const API_URL = 'https://<YOUR_BACKEND_URL>/api';
+const API_URL = 'https://backpackers-travels.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
