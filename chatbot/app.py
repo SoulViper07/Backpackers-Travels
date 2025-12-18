@@ -19,7 +19,11 @@ logging.basicConfig(level=logging.INFO)
 
 # Configure Google Gemini API
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-2.5-flash')
+system_instruction = "You are GuideAI, a friendly and expert travel assistant. You must only answer questions related to travel, tourism, geography, and trip planning. If a user asks about anything else, you must politely decline and state that you are a travel assistant and cannot answer questions on that topic."
+model = genai.GenerativeModel(
+    'gemini-2.5-flash',
+    system_instruction=system_instruction
+)
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
