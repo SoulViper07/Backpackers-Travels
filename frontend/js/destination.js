@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchDestinationDetails(name) {
+    console.log("Fetching details for:", name); // for debugging
     const loader = document.getElementById('details-loader');
     const content = document.getElementById('destination-content');
 
