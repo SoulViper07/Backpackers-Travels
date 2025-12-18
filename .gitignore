@@ -1,0 +1,11 @@
+# Node.js
+/backend/node_modules
+/backend/.env
+npm-debug.log
+*.log
+
+# Python
+/chatbot/.env
+/chatbot/__pycache__/
+/chatbot/*.pyc
+.DS_Store

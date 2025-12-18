@@ -1,0 +1,17 @@
+The "Backpackers Travels" website is a modern travel agency platform designed to assist users in discovering and planning their next adventure. It offers a user-friendly interface with several key features:
+
+*   **Destination Discovery:** The home page (index.html) prominently displays popular travel destinations (e.g., Darjeeling, Shimla, Goa, Jaipur, Rishikesh, Varanasi) with descriptions and allows users to explore nearby places based on their location.
+
+*   **AI Planner Integration:** A core feature is the integrated AI Travel Planner, accessible via a dedicated button on the home page. This opens a modal chat interface.
+
+*   **Interactive Chatbot Experience:** The modal provides a simple, modern, and user-friendly chat interface with styled chat bubbles, allowing users to converse directly with an AI chatbot powered by Google's Gemini model (gemini-2.5-flash).
+
+*   **Trip Planning Assistance:** Users can interact with the chatbot to request personalized travel plans based on their preferences, destination, duration, and budget.
+
+*   **Backend Services:** A Node.js backend server (server.js) handles API requests for destinations (e.g., /api/places, /api/nearby) and acts as an intermediary or direct caller for the Python Flask chatbot server (chatbot.py).
+
+*   **Modular Architecture:** The project maintains a clear separation between frontend (HTML, CSS, JavaScript), backend (Node.js), and chatbot (Python Flask/Gemini) components, suitable for AI/ML student projects.
+
+*   **Responsive Design:** The frontend is designed to be visually appealing and user-friendly, with attention to readability on a dark theme and a responsive layout.
+
+The website aims to streamline the travel planning process by leveraging AI conversational capabilities to provide instant, tailored itineraries and information.

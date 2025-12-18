@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Planner | Backpackers Travels</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon - Trekking/Hiking Icon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚶</text></svg>">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div class="loader"></div>
+        <div class="loader-text">Loading Adventure...</div>
+    </div>
+    <div class="background-animation">
+        <div class="background-layer" id="layer1"></div>
+        <div class="background-layer" id="layer2"></div>
+        <div class="background-layer" id="layer3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-hiking me-2"></i>Backpackers Travels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="planner.html">AI Planner</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AI Planner Section -->
+    <main class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="card shadow-lg">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h2><i class="fas fa-robot me-2"></i>AI Travel Planner</h2>
+                        <p class="mb-0">Let our AI craft the perfect itinerary for you!</p>
+                    </div>
+                    <div class="card-body p-4">
+                        <form id="ai-planner-form">
+                            <div class="row g-3">
+                                <!-- Inputs -->
+                                <div class="col-md-6">
+                                    <label for="currentLocation" class="form-label">Your Current City</label>
+                                    <input type="text" class="form-control" id="currentLocation" placeholder="e.g., Mumbai" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="destination" class="form-label">Desired Destination (Optional)</label>
+                                    <input type="text" class="form-control" id="destination" placeholder="e.g., Goa">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="days" class="form-label">Days Available</label>
+                                    <input type="number" class="form-control" id="days" placeholder="e.g., 5" min="1" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="budget" class="form-label">Budget</label>
+                                    <select id="budget" class="form-select" required>
+                                        <option value="" selected disabled>Select your budget...</option>
+                                        <option value="low">Low</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="high">High</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="preference" class="form-label">Travel Preference</label>
+                                    <select id="preference" class="form-select" required>
+                                        <option value="" selected disabled>What are you looking for?</option>
+                                        <option value="adventure">Adventure</option>
+                                        <option value="relaxation">Relaxation</option>
+                                        <option value="culture">Culture & History</option>
+                                        <option value="beach">Beach & Party</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="button" class="btn btn-primary btn-lg" id="aiPlannerBtn">
+                                    <i class="fas fa-magic me-2"></i>Generate Plan
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <!-- Results Area -->
+                        <div id="planner-result" class="mt-5" style="display: none;">
+                            <hr>
+                            <div id="planner-loader" class="text-center" style="display: none;">
+                                <div class="spinner-border text-primary" role="status"></div>
+                                <p class="mt-2">Our AI is building your custom itinerary...</p>
+                            </div>
+                            <div id="plan-content">
+                                <!-- AI plan will be injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>&copy; 2025 Backpackers Travels. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/planner.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "Darjeeling",
+    "coordinates": { "lat": 27.0410, "lng": 88.2663 },
+    "description": "Famous for its tea plantations, stunning views of Kanchenjunga, and the Himalayan Railway.",
+    "images": [
+      "assets/images/darjeeling/1655725396_img_20220620_170928.jpg",
+      "assets/images/darjeeling/360_F_145059639_HkURCzmfUA5MXw6FbqPeks6FozkJD8OK.jpg",
+      "assets/images/darjeeling/360_F_257988556_UbxCEwXDBjknhWhNAYmY3wuxnRHxz1vK.jpg",
+      "assets/images/darjeeling/Feature-image-Darjeeling-1.webp",
+      "assets/images/darjeeling/mount-kanchenjunga-over-darjeeling-city-600nw-2536112849.webp",
+      "assets/images/darjeeling/photo-1622308644420-b20142dc993c.jpg",
+      "assets/images/darjeeling/view-darjeeling-kanchenjunga-background-sunrise-600nw-2039699930.webp"
+    ],
+    "bestSeason": "April to June, October to December",
+    "suggestedDays": "3-4 days",
+    "tags": ["mountains", "relaxation", "culture"],
+    "placesToVisit": [
+      { "name": "Tiger Hill", "description": "Sunrise view over Kanchenjunga." },
+      { "name": "Batasia Loop", "description": "A spiral railway track with a war memorial." },
+      { "name": "Himalayan Mountaineering Institute", "description": "Museum and training center for mountaineers." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Darjeeling Car Rentals - 9876543210" },
+      { "type": "Bike", "contact": "Himalayan Bike Tours - 9876543211" }
+    ],
+    "restaurants": [
+      { "name": "Glenary's", "rating": 4.5 },
+      { "name": "Keventer's", "rating": 4.3 }
+    ],
+    "hotels": [
+      { "name": "Mayfair Darjeeling", "price": "₹12,000/night", "rating": 4.8 },
+      { "name": "Windamere Hotel", "price": "₹15,000/night", "rating": 4.7 }
+    ],
+    "travelTips": "Carry warm clothes regardless of the season. Try the local momos and thukpa."
+  },
+  {
+    "id": 2,
+    "name": "Shimla",
+    "coordinates": { "lat": 31.1048, "lng": 77.1734 },
+    "description": "The former summer capital of British India, known for its colonial architecture and the Himalayan foothills.",
+    "images": [
+      "assets/images/shimla/360_F_409571615_KEsl0FOjDX23T805YsCUVqJyhjy6iRJt.jpg",
+      "assets/images/shimla/istockphoto-1318300669-612x612.jpg",
+      "assets/images/shimla/istockphoto-515816334-612x612.jpg",
+      "assets/images/shimla/Landscape_of_Shimla_,_Himachal_Pradesh.jpg",
+      "assets/images/shimla/shimla-aireal-view-capital-himachal-pradesh-74008383.webp",
+      "assets/images/shimla/shimla-india-shimla-aerial-view-capital-city-indian-state-himachal-pradesh-located-northern-india-114069361.webp",
+      "assets/images/shimla/Shimla.jpg"
+    ],
+    "bestSeason": "March to June, October to February",
+    "suggestedDays": "2-3 days",
+    "tags": ["mountains", "culture", "history"],
+    "placesToVisit": [
+      { "name": "The Ridge", "description": "A large open space in the heart of Shimla." },
+      { "name": "Mall Road", "description": "The main shopping street of Shimla." },
+      { "name": "Jakhoo Temple", "description": "Ancient temple dedicated to Lord Hanuman." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Shimla Taxi Services - 9123456780" },
+      { "type": "Bike", "contact": "Mountain Riders - 9123456781" }
+    ],
+    "restaurants": [
+      { "name": "Cafe Sol", "rating": 4.4 },
+      { "name": "The Devicos", "rating": 4.1 }
+    ],
+    "hotels": [
+      { "name": "The Oberoi Cecil", "price": "₹18,000/night", "rating": 4.9 },
+      { "name": "Radisson Jass Shimla", "price": "₹10,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Walk along the Mall Road in the evening. Kufri is a must-visit for snow activities in winter."
+  },
+  {
+    "id": 3,
+    "name": "Goa",
+    "coordinates": { "lat": 15.2993, "lng": 74.1240 },
+    "description": "A coastal paradise famous for its beautiful beaches, vibrant nightlife, and Portuguese heritage.",
+    "images": [
+      "assets/images/goa/1513670399_arambol_beach.avif",
+      "assets/images/goa/images.jpg",
+      "assets/images/goa/istockphoto-535168027-612x612.jpg",
+      "assets/images/goa/pexels-umaraffan499-88212.jpg",
+      "assets/images/goa/photo-1512343879784-a960bf40e7f2.jpg",
+      "assets/images/goa/premium_photo-1697729701846-e34563b06d47.jpg",
+      "assets/images/goa/premium_photo-1697730411634-5313371ad8fe.jpg"
+    ],
+    "bestSeason": "November to February",
+    "suggestedDays": "5-7 days",
+    "tags": ["beach", "party", "relaxation"],
+    "placesToVisit": [
+      { "name": "Baga Beach", "description": "Popular for water sports and nightlife." },
+      { "name": "Old Goa", "description": "Home to historic churches and cathedrals." },
+      { "name": "Dudhsagar Falls", "description": "A majestic four-tiered waterfall." }
+    ],
+    "rentals": [
+      { "type": "Scooter", "contact": "Goa Bike Rental - 8876543210" },
+      { "type": "Car", "contact": "Goa Self Drive - 8876543211" }
+    ],
+    "restaurants": [
+      { "name": "Britto's", "rating": 4.6 },
+      { "name": "Martin's Corner", "rating": 4.5 }
+    ],
+    "hotels": [
+      { "name": "Taj Fort Aguada Resort", "price": "₹25,000/night", "rating": 4.8 },
+      { "name": "Marquis Beach Resort", "price": "₹8,000/night", "rating": 4.3 }
+    ],
+    "travelTips": "Rent a scooter to explore the state. Don't miss the seafood and local Feni."
+  },
+  {
+    "id": 4,
+    "name": "Jaipur",
+    "coordinates": { "lat": 26.9124, "lng": 75.7873 },
+    "description": "The 'Pink City', known for its stunning forts, royal palaces, and vibrant markets.",
+    "images": [
+      "assets/images/jaipur/360_F_528585313_ePj7WnYtyl6tNO6xqspWvKvLfz8hgi12.jpg",
+      "assets/images/jaipur/istockphoto-1398087835-612x612.jpg",
+      "assets/images/jaipur/istockphoto-509557770-612x612.jpg",
+      "assets/images/jaipur/istockphoto-938975958-612x612.jpg",
+      "assets/images/jaipur/pexels-sbsoneji-3581369.jpg",
+      "assets/images/jaipur/premium_photo-1661962404003-e0ca40da40ef.jpg",
+      "assets/images/jaipur/premium_photo-1661963054563-ce928e477ff3.jpg"
+    ],
+    "bestSeason": "October to March",
+    "suggestedDays": "3-4 days",
+    "tags": ["culture", "history", "desert"],
+    "placesToVisit": [
+      { "name": "Hawa Mahal", "description": "A palace with 953 windows." },
+      { "name": "Amer Fort", "description": "A majestic fort with artistic Hindu style elements." },
+      { "name": "City Palace", "description": "The royal residence and a museum." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Jaipur Car Hire - 7890123450" },
+      { "type": "Auto", "contact": "Pink City Rickshaws - 7890123451" }
+    ],
+    "restaurants": [
+      { "name": "Chokhi Dhani", "rating": 4.7 },
+      { "name": "Laxmi Misthan Bhandar", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "Rambagh Palace", "price": "₹45,000/night", "rating": 4.9 },
+      { "name": "ITC Rajputana", "price": "₹11,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "Shop for local handicrafts in Johari Bazaar. Try the traditional Rajasthani thali."
+  },
+  {
+    "id": 5,
+    "name": "Rishikesh",
+    "coordinates": { "lat": 30.0869, "lng": 78.2676 },
+    "description": "Known as the 'Yoga Capital of the World', a spiritual town on the banks of the Ganges.",
+    "images": [
+      "assets/images/rishikesh/360_F_757153920_ye2oNLnIzilUqn5OP0adQyp2WFVZp8N8.jpg",
+      "assets/images/rishikesh/istockphoto-498465035-612x612.jpg",
+      "assets/images/rishikesh/istockphoto-680199888-612x612.jpg",
+      "assets/images/rishikesh/photo-1720819029162-8500607ae232.jpg",
+      "assets/images/rishikesh/premium_photo-1697729439457-85d4b9d3a2cb.jpg",
+      "assets/images/rishikesh/premium_photo-1697730398251-40cd8dc57e0b.jpg",
+      "assets/images/rishikesh/temple-7499927_1280.jpg"
+    ],
+    "bestSeason": "September to November, February to April",
+    "suggestedDays": "3-5 days",
+    "tags": ["adventure", "spiritual", "yoga"],
+    "placesToVisit": [
+      { "name": "Laxman Jhula", "description": "A famous suspension bridge across the Ganges." },
+      { "name": "Ram Jhula", "description": "Another iconic suspension bridge." },
+      { "name": "Neer Garh Waterfall", "description": "A beautiful waterfall with trekking routes." }
+    ],
+    "rentals": [
+      { "type": "Scooter", "contact": "Rishikesh Bike Rentals - 9988776655" },
+      { "type": "Jeep", "contact": "Ganga Adventures - 9988776656" }
+    ],
+    "restaurants": [
+      { "name": "The Sitting Elephant", "rating": 4.8 },
+      { "name": "Chotiwala Restaurant", "rating": 4.0 }
+    ],
+    "hotels": [
+      { "name": "Ananda in the Himalayas", "price": "₹50,000/night", "rating": 4.9 },
+      { "name": "Aloha on the Ganges", "price": "₹9,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Attend the Ganga Aarti in the evening. Try river rafting and bungee jumping for an adrenaline rush."
+  },
+  {
+    "id": 6,
+    "name": "Varanasi",
+    "coordinates": { "lat": 25.3176, "lng": 82.9739 },
+    "description": "One of the world's oldest continually inhabited cities, and a major spiritual hub in India.",
+    "images": [
+      "assets/images/varanasi/360_F_264562951_MQRFSoIUDhNi3RVJByRKGtD2sVtRJb4W.jpg",
+      "assets/images/varanasi/360_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg",
+      "assets/images/varanasi/360_F_408252208_MKyckVSMchKhJGfrS019iQ6rsV5y7qTK.jpg",
+      "assets/images/varanasi/99.jpg",
+      "assets/images/varanasi/ai-generated-ancient-varanasi-city-generate-ai-photo.jpg",
+      "assets/images/varanasi/istockphoto-1164329797-612x612.jpg",
+      "assets/images/varanasi/water-city-varanasi-wallpaper-preview.jpg"
+    ],
+    "bestSeason": "October to March",
+    "suggestedDays": "2-3 days",
+    "tags": ["spiritual", "culture", "history"],
+    "placesToVisit": [
+      { "name": "Kashi Vishwanath Temple", "description": "One of the most famous Hindu temples." },
+      { "name": "Dashashwamedh Ghat", "description": "The main ghat in Varanasi on the Ganges River." },
+      { "name": "Sarnath", "description": "The place where Buddha gave his first sermon." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Varanasi Tours - 8887776665" },
+      { "type": "Boat", "contact": "Ganga Boatmen Union - 8887776660" }
+    ],
+    "restaurants": [
+      { "name": "Kashi Chaat Bhandar", "rating": 4.6 },
+      { "name": "Pizzeria Vaatika Cafe", "rating": 4.3 }
+    ],
+    "hotels": [
+      { "name": "Brijrama Palace", "price": "₹28,000/night", "rating": 4.8 },
+      { "name": "Taj Ganges, Varanasi", "price": "₹14,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "Take a boat ride on the Ganges at dawn. Witness the evening Ganga Aarti ceremony."
+  }
+]

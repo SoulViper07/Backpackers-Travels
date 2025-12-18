@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination Details | Backpackers Travels</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon - Trekking/Hiking Icon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚶</text></svg>">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-hiking me-2"></i><span id="navbar-brand-text" class="main-heading">Backpackers Travels</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destinations">Destinations</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="destination-details" class="container mt-5 pt-5">
+        <!-- Loader -->
+        <div id="details-loader" class="text-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3">Loading destination details...</p>
+        </div>
+
+        <!-- Destination content will be injected here -->
+        <div id="destination-content" style="display: none;">
+            <!-- Header section with image -->
+            <header class="destination-hero mb-4">
+                <div class="destination-overlay"></div>
+                <div class="container text-white text-center">
+                    <h1 id="place-name" class="destination-title"></h1>
+                    <p id="place-description" class="destination-subtitle"></p>
+                </div>
+            </header>
+
+
+            <!-- Image Gallery -->
+            <section id="image-gallery" class="mb-4">
+                <h3 class="mb-3">Image Gallery</h3>
+                <div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators" id="carousel-indicators-container">
+                        <!-- Indicators will be injected here by JavaScript -->
+                    </div>
+                    <div class="carousel-inner" id="image-gallery-container">
+                        <!-- Images will be injected here by JavaScript -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Details Grid -->
+            <div class="row g-4">
+                <!-- Left Column -->
+                <div class="col-lg-8">
+                    <!-- Places to Visit -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header text-white">
+                            <h4 class="mb-0"><i class="fas fa-map-marked-alt me-2"></i>Places to Visit</h4>
+                        </div>
+                        <ul id="places-to-visit-list" class="list-group list-group-flush"></ul>
+                    </div>
+
+                    <!-- Restaurants -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header text-white">
+                            <h4 class="mb-0"><i class="fas fa-utensils me-2"></i>Restaurants Nearby</h4>
+                        </div>
+                        <ul id="restaurants-list" class="list-group list-group-flush"></ul>
+                    </div>
+
+                    <!-- Hotels & Homestays -->
+                    <div class="card shadow-sm">
+                        <div class="card-header text-white">
+                            <h4 class="mb-0"><i class="fas fa-hotel me-2"></i>Hotels & Homestays</h4>
+                        </div>
+                        <ul id="hotels-list" class="list-group list-group-flush"></ul>
+                    </div>
+                </div>
+
+                <!-- Right Column (Info Panel) -->
+                <div class="col-lg-4">
+                    <div class="card sticky-top top-20">
+                        <div class="card-body">
+                            <h4 class="card-title">Travel Guide</h4>
+                            <hr>
+                            <p><i class="fas fa-calendar-alt me-2 text-muted"></i><strong>Best Season:</strong> <span id="best-season"></span></p>
+                            <p><i class="far fa-clock me-2 text-muted"></i><strong>Suggested Stay:</strong> <span id="suggested-days"></span></p>
+                            <hr>
+                            <h5><i class="fas fa-car me-2 text-muted"></i>Rentals</h5>
+                            <ul id="rentals-list" class="list-unstyled"></ul>
+                            <hr>
+                            <h5><i class="fas fa-lightbulb me-2 text-muted"></i>Travel Tips</h5>
+                            <p id="travel-tips"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p>&copy; 2025 Backpackers Travels. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/destination.js"></script>
+</body>
+</html>
