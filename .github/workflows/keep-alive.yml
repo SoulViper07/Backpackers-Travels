@@ -1,0 +1,12 @@
+name: Keep Alive
+
+on:
+  schedule:
+    # Runs every 14 minutes
+            - cron: '*/10 * * * *'
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping website
+        run: curl -sS "https://backpackers-travels-site.onrender.com/" > /dev/null
