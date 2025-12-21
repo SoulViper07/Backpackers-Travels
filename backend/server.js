@@ -16,14 +16,14 @@ app.use("/Image", express.static(path.join(__dirname, '..', 'Image')));
 
 // Load the travel data
 let places = [];
-const dataPath = path.join(__dirname, 'data', 'places.json');
-fs.readFile(dataPath, 'utf8', (err, data) => {
-    if (err) {
-        console.error("Error reading travel data:", err);
-        return;
-    }
+try {
+    const data = fs.readFileSync(dataPath, 'utf8');
     places = JSON.parse(data);
-});
+    console.log("Travel data loaded successfully.");
+} catch (err) {
+    console.error("Error reading travel data synchronously:", err);
+    process.exit(1); // Exit if data can't be loaded, as it's critical
+}
 
 // --- Helper Functions ---
 
