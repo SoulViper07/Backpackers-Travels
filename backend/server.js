@@ -16,6 +16,7 @@ app.use("/Image", express.static(path.join(__dirname, '..', 'Image')));
 
 // Load the travel data
 let places = [];
+const dataPath = path.join(__dirname, 'data', 'places.json'); // Re-added dataPath definition
 try {
     const data = fs.readFileSync(dataPath, 'utf8');
     places = JSON.parse(data);
