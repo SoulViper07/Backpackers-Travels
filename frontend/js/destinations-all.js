@@ -99,9 +99,6 @@ function handleSort(sortType) {
         case 'underrated':
             sortByPopularity(false); // false for ascending (least popular)
             break;
-        case 'nearby':
-            sortByNearby();
-            break;
         case 'default':
         default:
             renderPlaces(allPlaces); // Render original unfiltered list
@@ -129,55 +126,4 @@ function sortByPopularity(descending = true) {
         return descending ? ratingB - ratingA : ratingA - ratingB;
     });
     renderPlaces(sortedPlaces);
-}
-
-function sortByNearby() {
-    const container = document.getElementById('places-container');
-    const loader = document.getElementById('destinations-loader');
-    const errorDiv = document.getElementById('destinations-error');
-
-    // Reset previous errors
-    errorDiv.style.display = 'none';
-
-    if (!navigator.geolocation) {
-        errorDiv.textContent = 'Geolocation is not supported by your browser.';
-        errorDiv.style.display = 'block';
-        return;
-    }
-
-    loader.style.display = 'block';
-    container.innerHTML = ''; // Clear current places
-
-    navigator.geolocation.getCurrentPosition(
-        (position) => {
-            const { latitude, longitude } = position.coords;
-            fetch(`${API_URL}/api/places/sorted-by-distance?lat=${latitude}&lng=${longitude}`)
-                .then(response => {
-                    if (!response.ok) throw new Error('Failed to fetch nearby places.');
-                    return response.json();
-                })
-                .then(places => {
-                    renderPlaces(places);
-                })
-                .catch(error => {
-                    console.error('Error fetching nearby sorted places:', error);
-                    errorDiv.textContent = `Could not load nearby places. ${error.message}`;
-                    errorDiv.style.display = 'block';
-                })
-                .finally(() => {
-                    loader.style.display = 'none';
-                });
-        },
-        (error) => {
-            loader.style.display = 'none';
-            let message = 'Could not get your location. Please allow location access.';
-            if (error.code === 1) {
-                message = 'Location access was denied. Please enable it in your browser settings to sort by "nearby".';
-            }
-            errorDiv.textContent = message;
-            errorDiv.style.display = 'block';
-            // As a fallback, render the default list
-            renderPlaces(allPlaces);
-        }
-    );
 }
