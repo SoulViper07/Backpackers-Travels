@@ -56,20 +56,14 @@ To get the full application running, you need to start the backend server and th
 The backend server is responsible for providing all the travel data to the frontend.
 
 1.  **Navigate to the backend directory:**
-    ```bash
-    cd "C:\\Users\\areet\\Desktop\\Travel agency\\backend"
-    ```
+   
 
 2.  **Install dependencies:**
     You'll need Node.js and npm installed. Run this command to install the required packages (`express` and `cors`).
-    ```bash
-    npm install
-    ```
+    
 
 3.  **Start the server:**
-    ```bash
-    node server.js
-    ```
+    
     The terminal should display: `Backend server is running on http://localhost:3001`
 
     **Keep this terminal window open** while you use the application.
@@ -80,7 +74,6 @@ The frontend is a static website that communicates with the running backend.
 
 1.  **Open `index.html`:**
     Navigate to the `frontend` directory in your file explorer:
-    `C:\\Users\\areet\\Desktop\\Travel agency\\frontend`
 
 2.  **Double-click the `index.html` file.** This will open the website in your default web browser.
 
