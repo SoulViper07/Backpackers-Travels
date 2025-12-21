@@ -51,6 +51,27 @@ function renderPlaces(places) {
     container.innerHTML = places.map((place, index) => 
         window.galleryLoader.createDestinationCardHtml(place, place.hasOwnProperty('distance'), index)
     ).join('');
+
+    // Re-initialize animations after content is loaded
+    setTimeout(initializeScrollAnimations, 100);
+}
+
+function initializeScrollAnimations() {
+    /**
+     * Uses IntersectionObserver to add a class to elements when they enter the viewport,
+     * triggering a CSS animation.
+     */
+    const animatedElements = document.querySelectorAll(".destination-card, .hero-section, .section-title");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+    animatedElements.forEach(el => observer.observe(el));
 }
 
 function setupSortButtons() {
