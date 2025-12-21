@@ -53,7 +53,7 @@ function renderPlaces(places) {
     ).join('');
 
     // Re-initialize animations after content is loaded
-    setTimeout(initializeScrollAnimations, 100);
+    setTimeout(initializeScrollAnimations, 0);
 }
 
 function initializeScrollAnimations() {
