@@ -71,125 +71,191 @@ app.get('/api/places/:name', (req, res) => {
 
 
 /**
+
+
  * @api {get} /api/nearby Get nearby travel destinations
+
+
  * @apiName GetNearby
+
+
  * @apiGroup Places
+
+
  * @apiParam {Number} lat User's latitude.
+
+
  * @apiParam {Number} lng User's longitude.
+
+
  * @apiParam {Number} [limit=5] Maximum number of places to return.
+
+
  */
+
+
 app.get('/api/nearby', (req, res) => {
+
+
     const { lat, lng, limit = 5 } = req.query;
+
+
     console.log(`GET /api/nearby hit with lat=${lat}, lng=${lng}.`);
 
+
+
+
+
     if (!lat || !lng) {
+
+
         console.log('Missing lat or lng for /api/nearby.');
+
+
         return res.status(400).json({ error: 'Latitude and longitude are required' });
+
+
     }
 
+
+
+
+
     const userLat = parseFloat(lat);
+
+
     const userLng = parseFloat(lng);
 
+
+
+
+
     const placesWithDistance = places.map(place => ({
+
+
         ...place,
+
+
         distance: getDistance(userLat, userLng, place.coordinates.lat, place.coordinates.lng)
+
+
     }));
+
+
+
+
 
     placesWithDistance.sort((a, b) => a.distance - b.distance);
 
+
+
+
+
     res.json(placesWithDistance.slice(0, parseInt(limit, 10)));
-});
-
-/**
- * @api {post} /api/ai/plan Generate a custom travel plan
- * @apiName AIPlanner
- * @apiGroup AI
- * @apiBody {String} currentLocation User's current location name.
- * @apiBody {Number} days Number of days available for travel.
- * @apiBody {String} budget User's budget (e.g., 'low', 'medium', 'high').
- * @apiBody {String} preference Travel preference (e.g., 'adventure', 'relaxation', 'culture').
- */
 
 
-// --- Helper Functions ---
-
-// Haversine formula to calculate distance between two lat/lng points
-function getDistance(lat1, lon1, lat2, lon2) {
-    const R = 6371; // Radius of the Earth in km
-    const dLat = (lat2 - lat1) * Math.PI / 180;
-    const dLon = (lon2 - lon1) * Math.PI / 180;
-    const a =
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-        Math.sin(dLon / 2) * Math.sin(dLon / 2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return R * c; // Distance in km
-}
-
-// --- API Endpoints ---
-
-/**
- * @api {get} /api/places Get all travel destinations
- * @apiName GetPlaces
- * @apiGroup Places
- */
-app.get('/api/places', (req, res) => {
-    console.log('GET /api/places hit. Returning all places.');
-    res.json(places);
-});
-
-/**
- * @api {get} /api/places/:name Get a specific travel destination by name
- * @apiName GetPlaceByName
- * @apiGroup Places
- * @apiParam {String} name The name of the destination (case-insensitive).
- */
-app.get('/api/places/:name', (req, res) => {
-    const { name } = req.params;
-    console.log(`GET /api/places/${name} hit.`);
-    const place = places.find(p => p.name.toLowerCase() === name.toLowerCase());
-    if (place) {
-        res.json(place);
-    } else {
-        console.log(`Place '${name}' not found.`);
-        res.status(404).json({ error: 'Place not found' });
-    }
 });
 
 
+
+
+
 /**
- * @api {get} /api/nearby Get nearby travel destinations
- * @apiName GetNearby
+
+
+ * @api {get} /api/places/sorted-by-distance Get all places sorted by distance
+
+
+ * @apiName GetSortedByDistance
+
+
  * @apiGroup Places
+
+
  * @apiParam {Number} lat User's latitude.
+
+
  * @apiParam {Number} lng User's longitude.
- * @apiParam {Number} [limit=5] Maximum number of places to return.
+
+
  */
-app.get('/api/nearby', (req, res) => {
-    const { lat, lng, limit = 5 } = req.query;
-    console.log(`GET /api/nearby hit with lat=${lat}, lng=${lng}.`);
+
+
+app.get('/api/places/sorted-by-distance', (req, res) => {
+
+
+    const { lat, lng } = req.query;
+
+
+    console.log(`GET /api/places/sorted-by-distance hit with lat=${lat}, lng=${lng}.`);
+
+
+
+
 
     if (!lat || !lng) {
-        console.log('Missing lat or lng for /api/nearby.');
+
+
+        console.log('Missing lat or lng for /api/places/sorted-by-distance.');
+
+
         return res.status(400).json({ error: 'Latitude and longitude are required' });
+
+
     }
 
+
+
+
+
     const userLat = parseFloat(lat);
+
+
     const userLng = parseFloat(lng);
 
+
+
+
+
     const placesWithDistance = places.map(place => ({
+
+
         ...place,
+
+
         distance: getDistance(userLat, userLng, place.coordinates.lat, place.coordinates.lng)
+
+
     }));
+
+
+
+
 
     placesWithDistance.sort((a, b) => a.distance - b.distance);
 
-    res.json(placesWithDistance.slice(0, parseInt(limit, 10)));
+
+
+
+
+    res.json(placesWithDistance);
+
+
 });
 
+
+
+
+
 /**
+
+
  * @api {post} /api/ai/plan Generate a custom travel plan
+
+
  * @apiName AIPlanner
+
+
  * @apiGroup AI
  * @apiBody {String} currentLocation User's current location name.
  * @apiBody {String} [destination] Desired destination (optional).

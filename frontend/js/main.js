@@ -37,7 +37,7 @@ function fetchAllPlaces() {
         .then(places => {
             const container = document.getElementById('places-container');
             if (container) {
-                container.innerHTML = places.map((place, index) => window.galleryLoader.createDestinationCardHtml(place, false, index)).join('');
+                container.innerHTML = places.slice(0, 8).map((place, index) => window.galleryLoader.createDestinationCardHtml(place, false, index)).join('');
             }
         })
         .catch(error => {

@@ -214,5 +214,773 @@
       { "name": "Taj Ganges, Varanasi", "price": "₹14,000/night", "rating": 4.6 }
     ],
     "travelTips": "Take a boat ride on the Ganges at dawn. Witness the evening Ganga Aarti ceremony."
+  },
+  {
+    "id": 7,
+    "name": "Agra",
+    "coordinates": { "lat": 27.1767, "lng": 78.0081 },
+    "description": "Home to the iconic Taj Mahal, a monument of love and a masterpiece of Mughal architecture.",
+    "images": [
+      "assets/images/agra/download.jpg",
+      "assets/images/agra/gettyimages-1160611694-612x612.jpg",
+      "assets/images/agra/gettyimages-1401574031-612x612.jpg",
+      "assets/images/agra/gettyimages-475438994-612x612.jpg",
+      "assets/images/agra/gettyimages-498489079-612x612.jpg",
+      "assets/images/agra/OIP.jpg",
+      "assets/images/agra/tmg7qlup0cb51.jpg"
+    ],
+    "bestSeason": "October to March",
+    "suggestedDays": "2-3 days",
+    "tags": ["history", "culture", "architecture"],
+    "placesToVisit": [
+      { "name": "Taj Mahal", "description": "An immense mausoleum of white marble, built between 1631 and 1648." },
+      { "name": "Agra Fort", "description": "A historical fort that was the main residence of the emperors of the Mughal Dynasty." },
+      { "name": "Fatehpur Sikri", "description": "A historic city complex built by Emperor Akbar." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Agra Tourist Car Service - 9876543212" },
+      { "type": "Auto", "contact": "Agra City Rickshaws - 9876543213" }
+    ],
+    "restaurants": [
+      { "name": "Pinch of Spice", "rating": 4.5 },
+      { "name": "Dasaprakash", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "The Oberoi Amarvilas", "price": "₹55,000/night", "rating": 4.9 },
+      { "name": "ITC Mughal", "price": "₹12,000/night", "rating": 4.7 }
+    ],
+    "travelTips": "Visit the Taj Mahal at sunrise for the most magical view and fewer crowds. Try the local 'Petha' sweet."
+  },
+  {
+    "id": 8,
+    "name": "Amritsar",
+    "coordinates": { "lat": 31.6340, "lng": 74.8723 },
+    "description": "A city of immense spiritual importance for Sikhs, home to the stunning Golden Temple.",
+    "images": [
+      "assets/images/amritsar/gettyimages-1277918105-612x612.jpg",
+      "assets/images/amritsar/gettyimages-504746394-612x612.jpg",
+      "assets/images/amritsar/gettyimages-542314991-612x612.jpg",
+      "assets/images/amritsar/gettyimages-592189407-612x612.jpg",
+      "assets/images/amritsar/gettyimages-949255646-612x612.jpg",
+      "assets/images/amritsar/golden-4389970_1280.jpg",
+      "assets/images/amritsar/harmandir-sahib-5895031_1280.jpg"
+    ],
+    "bestSeason": "September to December, February to March",
+    "suggestedDays": "2 days",
+    "tags": ["spiritual", "culture", "history", "food"],
+    "placesToVisit": [
+      { "name": "Golden Temple", "description": "The holiest Gurdwara and the most important pilgrimage site of Sikhism." },
+      { "name": "Wagah Border", "description": "Witness the daily military practice of the Beating Retreat ceremony." },
+      { "name": "Jallianwala Bagh", "description": "A public garden housing a memorial of national importance." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Amritsar Car Rental - 9123456782" },
+      { "type": "Auto", "contact": "Holy City Rickshaws - 9123456783" }
+    ],
+    "restaurants": [
+      { "name": "Kesar Da Dhaba", "rating": 4.6 },
+      { "name": "Bharawan Da Dhaba", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "Hyatt Regency Amritsar", "price": "₹8,000/night", "rating": 4.6 },
+      { "name": "Taj Swarna", "price": "₹10,000/night", "rating": 4.7 }
+    ],
+    "travelTips": "Dress modestly and cover your head when visiting the Golden Temple. Don't miss the langar (community meal)."
+  },
+  {
+    "id": 9,
+    "name": "Andaman & Nicobar",
+    "coordinates": { "lat": 11.7401, "lng": 92.6586 },
+    "description": "A stunning archipelago in the Bay of Bengal, known for its pristine beaches, coral reefs, and lush forests.",
+    "images": [
+      "assets/images/andaman & nicobar/havelock-338536_1280.jpg",
+      "assets/images/andaman & nicobar/krabi-5172427_1280.jpg",
+      "assets/images/andaman & nicobar/nicobar-pigeon-317853_1280.jpg",
+      "assets/images/andaman & nicobar/phi-phi-island-5162095_1280.jpg",
+      "assets/images/andaman & nicobar/sea-4300782_1280.jpg",
+      "assets/images/andaman & nicobar/thailand-1195997_1280.jpg",
+      "assets/images/andaman & nicobar/thailand-1451379_1280.jpg"
+    ],
+    "bestSeason": "October to May",
+    "suggestedDays": "7-10 days",
+    "tags": ["beach", "island", "adventure", "nature"],
+    "placesToVisit": [
+      { "name": "Radhanagar Beach", "description": "Often cited as one of the most beautiful beaches in Asia." },
+      { "name": "Cellular Jail", "description": "A colonial prison used by the British to exile political prisoners." },
+      { "name": "Havelock Island", "description": "Famous for its dive sites and coral reefs." }
+    ],
+    "rentals": [
+      { "type": "Scooter", "contact": "Island Bike Rentals - 8876543212" },
+      { "type": "Ferry", "contact": "Makruzz Ferry Services - 8876543213" }
+    ],
+    "restaurants": [
+      { "name": "Something Different - A Beachside Cafe", "rating": 4.7 },
+      { "name": "Full Moon Cafe", "rating": 4.5 }
+    ],
+    "hotels": [
+      { "name": "Taj Exotica Resort & Spa", "price": "₹35,000/night", "rating": 4.8 },
+      { "name": "SeaShell, Havelock", "price": "₹12,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "Book ferries between islands in advance, especially during peak season. Internet connectivity can be sparse."
+  },
+  {
+    "id": 10,
+    "name": "Coorg",
+    "coordinates": { "lat": 12.3375, "lng": 75.8069 },
+    "description": "The 'Scotland of India', a misty hill station famous for its coffee plantations, steep hills, and lush forests.",
+    "images": [
+      "assets/images/coorg/gettyimages-974585442-612x612.jpg",
+      "assets/images/coorg/gettyimages-979338678-612x612.jpg",
+      "assets/images/coorg/gettyimages-980815050-612x612.jpg",
+      "assets/images/coorg/gettyimages-986480340-612x612.jpg",
+      "assets/images/coorg/gettyimages-989233220-612x612.jpg",
+      "assets/images/coorg/gettyimages-990288726-612x612.jpg",
+      "assets/images/coorg/gettyimages-992712868-612x612.jpg",
+      "assets/images/coorg/gettyimages-999486474-612x612.jpg"
+    ],
+    "bestSeason": "October to May",
+    "suggestedDays": "3-4 days",
+    "tags": ["mountains", "nature", "relaxation", "coffee"],
+    "placesToVisit": [
+      { "name": "Abbey Falls", "description": "A beautiful waterfall amidst private coffee plantations." },
+      { "name": "Raja's Seat", "description": "A seasonal garden with a view of the surrounding hills." },
+      { "name": "Dubare Elephant Camp", "description": "An opportunity to get up close with elephants." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Coorg Car Rentals - 9988776657" },
+      { "type": "Jeep", "contact": "Misty Trails Jeeps - 9988776658" }
+    ],
+    "restaurants": [
+      { "name": "The Falls at The Tamara", "rating": 4.8 },
+      { "name": "Coorg Cuisine", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "The Tamara Coorg", "price": "₹25,000/night", "rating": 4.9 },
+      { "name": "Evolve Back, Coorg", "price": "₹30,000/night", "rating": 4.9 }
+    ],
+    "travelTips": "Try the local Kodava cuisine, especially the Pandi Curry (pork curry). Buy some fresh coffee and spices."
+  },
+  {
+    "id": 11,
+    "name": "Dooars",
+    "coordinates": { "lat": 26.75, "lng": 89.0 },
+    "description": "The floodplains of Eastern Himalayas in North-East India, known for its rich biodiversity, forests, and tea gardens.",
+    "images": [
+      "assets/images/dooars/240_F_282938560_rTip5AZuC5uqjjgen3JdEp4YhN5SbsWI.jpg",
+      "assets/images/dooars/240_F_359483661_9SpMCyLD6gDLAlr2sbvBrngxL8jQp7Xo.jpg",
+      "assets/images/dooars/240_F_361717013_2m9Bv09Xd7TxKuyKXxfM5eVCj3YlZlNR.jpg",
+      "assets/images/dooars/240_F_480199774_JF2txySSKUKCFBknaPuSEGx3rEAlI9MJ.jpg",
+      "assets/images/dooars/240_F_575044348_9Io2BFshvotjkW51VJRWleSABs2QTryW.jpg",
+      "assets/images/dooars/240_F_580591821_qvXUXC74duMWFpwoPziBkyRXb8l3ZSbB.jpg",
+      "assets/images/dooars/240_F_586018145_r3UkP2A8kTDKPtcGanI6NsA7nA0XJcvj.jpg",
+      "assets/images/dooars/240_F_637969615_qKxVACHzsQEFw8i0JPKSxXfZfVjVLpWW.jpg"
+    ],
+    "bestSeason": "September to May",
+    "suggestedDays": "4-5 days",
+    "tags": ["nature", "wildlife", "forest", "tea"],
+    "placesToVisit": [
+      { "name": "Gorumara National Park", "description": "Famous for its population of Indian rhinoceros." },
+      { "name": "Jaldapara National Park", "description": "Home to a large population of one-horned rhinos." },
+      { "name": "Chapramari Wildlife Sanctuary", "description": "Known for its elephants and diverse bird species." }
+    ],
+    "rentals": [
+      { "type": "Jeep", "contact": "Dooars Safari Service - 8887776661" }
+    ],
+    "restaurants": [
+      { "name": "Sawdagar Resort & Restaurant", "rating": 4.2 },
+      { "name": "Dooars Family Restaurant", "rating": 4.0 }
+    ],
+    "hotels": [
+      { "name": "Sinclairs Retreat Dooars", "price": "₹7,000/night", "rating": 4.5 },
+      { "name": "Murti Tourist Lodge", "price": "₹3,000/night", "rating": 4.1 }
+    ],
+    "travelTips": "Book jungle safaris in advance. Carry insect repellent and binoculars for a better wildlife viewing experience."
+  },
+  {
+    "id": 12,
+    "name": "Gokarna",
+    "coordinates": { "lat": 14.5479, "lng": 74.3188 },
+    "description": "A quieter alternative to Goa, known for its pristine beaches and sacred temples, offering a more laid-back vibe.",
+    "images": [
+      "assets/images/gokarna/gettyimages-1196957740-612x612.jpg",
+      "assets/images/gokarna/gettyimages-1474480725-612x612.jpg",
+      "assets/images/gokarna/gettyimages-1709448301-612x612.jpg",
+      "assets/images/gokarna/gettyimages-463209345-612x612.jpg",
+      "assets/images/gokarna/gettyimages-541506666-612x612.jpg",
+      "assets/images/gokarna/gettyimages-860520176-612x612.jpg",
+      "assets/images/gokarna/gettyimages-986213218-612x612.jpg",
+      "assets/images/gokarna/gettyimages-989134272-612x612.jpg"
+    ],
+    "bestSeason": "October to March",
+    "suggestedDays": "3-4 days",
+    "tags": ["beach", "relaxation", "spiritual"],
+    "placesToVisit": [
+      { "name": "Om Beach", "description": "Shaped like the auspicious 'Om' symbol." },
+      { "name": "Mahabaleshwar Temple", "description": "A famous Shiva temple with immense religious significance." },
+      { "name": "Kudle Beach", "description": "A beautiful and relatively secluded beach." }
+    ],
+    "rentals": [
+      { "type": "Scooter", "contact": "Gokarna Bike Hire - 7890123452" }
+    ],
+    "restaurants": [
+      { "name": "Namaste Cafe", "rating": 4.3 },
+      { "name": "Prema Restaurant", "rating": 4.2 }
+    ],
+    "hotels": [
+      { "name": "Kudle Beach View Resort", "price": "₹4,000/night", "rating": 4.4 },
+      { "name": "Zostel Gokarna", "price": "₹1,500/night", "rating": 4.6 }
+    ],
+    "travelTips": "Explore the beaches by trekking from one to another. Enjoy the serene sunsets."
+  },
+  {
+    "id": 13,
+    "name": "Hampi",
+    "coordinates": { "lat": 15.3350, "lng": 76.4600 },
+    "description": "A UNESCO World Heritage Site, Hampi is an ancient village with ruins of the Vijayanagara Empire.",
+    "images": [
+      "assets/images/hampi/gettyimages-1171530342-612x612.jpg",
+      "assets/images/hampi/gettyimages-1354304865-612x612.jpg",
+      "assets/images/hampi/gettyimages-137336783-612x612.jpg",
+      "assets/images/hampi/gettyimages-1406136977-612x612.jpg",
+      "assets/images/hampi/gettyimages-171153570-612x612.jpg",
+      "assets/images/hampi/gettyimages-520909224-612x612.jpg",
+      "assets/images/hampi/gettyimages-647004216-612x612.jpg",
+      "assets/images/hampi/gettyimages-695445394-612x612.jpg"
+    ],
+    "bestSeason": "October to February",
+    "suggestedDays": "3-4 days",
+    "tags": ["history", "ruins", "culture", "boulder"],
+    "placesToVisit": [
+      { "name": "Virupaksha Temple", "description": "The main center of pilgrimage at Hampi." },
+      { "name": "Vittala Temple", "description": "Famous for its stone chariot and musical pillars." },
+      { "name": "Hampi Bazaar", "description": "A historic market street." }
+    ],
+    "rentals": [
+      { "type": "Scooter", "contact": "Hampi Bike Rental - 9876543214" },
+      { "type": "Bicycle", "contact": "Explore Hampi Cycles - 9876543215" }
+    ],
+    "restaurants": [
+      { "name": "Mango Tree", "rating": 4.5 },
+      { "name": "Laughing Buddha Cafe", "rating": 4.3 }
+    ],
+    "hotels": [
+      { "name": "Evolve Back, Hampi", "price": "₹32,000/night", "rating": 4.9 },
+      { "name": "Hampi's Boulders", "price": "₹8,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "Cross the Tungabhadra river on a coracle. Rent a bicycle or scooter to explore the vast ruins."
+  },
+  {
+    "id": 14,
+    "name": "Kalimpong",
+    "coordinates": { "lat": 27.0597, "lng": 88.4734 },
+    "description": "A quiet hill station in West Bengal known for its panoramic valley views, Buddhist monasteries, and colonial-era architecture.",
+    "images": [
+      "assets/images/kalimpong/gettyimages-1241718153-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-169439311-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-177212533-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-2225253810-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-488533837-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-502060300-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-536026760-612x612.jpg",
+      "assets/images/kalimpong/gettyimages-984906406-612x612.jpg"
+    ],
+    "bestSeason": "March to May, September to November",
+    "suggestedDays": "2-3 days",
+    "tags": ["mountains", "relaxation", "culture", "buddhist"],
+    "placesToVisit": [
+      { "name": "Deolo Hill", "description": "The highest point in Kalimpong, offering magnificent views." },
+      { "name": "Zang Dhok Palri Phodang", "description": "A beautiful Buddhist monastery with rare scriptures." },
+      { "name": "Pine View Nursery", "description": "Famous for its extensive collection of exotic cacti." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Kalimpong Taxi Service - 9123456784" }
+    ],
+    "restaurants": [
+      { "name": "Gompu's", "rating": 4.2 },
+      { "name": "King Thai", "rating": 4.3 }
+    ],
+    "hotels": [
+      { "name": "Elgin Silver Oaks", "price": "₹9,000/night", "rating": 4.6 },
+      { "name": "Sinclairs Retreat Kalimpong", "price": "₹6,000/night", "rating": 4.4 }
+    ],
+    "travelTips": "Try the local Kalimpong cheese and lollipops. It's a great place for paragliding."
+  },
+  {
+    "id": 15,
+    "name": "Kashmir",
+    "coordinates": { "lat": 34.0837, "lng": 74.7973 },
+    "description": "Often called 'Paradise on Earth', Kashmir is known for its breathtaking landscapes, serene lakes, and snow-capped mountains.",
+    "images": [
+      "assets/images/kashmir/gettyimages-1041826306-612x612.jpg",
+      "assets/images/kashmir/gettyimages-1136006463-612x612.jpg",
+      "assets/images/kashmir/gettyimages-1171962535-612x612.jpg",
+      "assets/images/kashmir/gettyimages-1449852982-612x612.jpg",
+      "assets/images/kashmir/gettyimages-1469910863-612x612.jpg",
+      "assets/images/kashmir/gettyimages-2109847504-612x612.jpg",
+      "assets/images/kashmir/gettyimages-458469175-612x612.jpg",
+      "assets/images/kashmir/gettyimages-571129063-612x612.jpg"
+    ],
+    "bestSeason": "March to October",
+    "suggestedDays": "7-8 days",
+    "tags": ["mountains", "nature", "lakes", "relaxation"],
+    "placesToVisit": [
+      { "name": "Dal Lake", "description": "Famous for its houseboats (shikaras) and floating markets." },
+      { "name": "Gulmarg", "description": "A popular skiing destination and home to the world's highest gondola." },
+      { "name": "Pahalgam", "description": "A picturesque town known for its stunning vistas and trekking routes." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Kashmir Car Services - 8887776662" },
+      { "type": "Shikara", "contact": "Dal Lake Shikara Union - 8887776663" }
+    ],
+    "restaurants": [
+      { "name": "Ahdoos", "rating": 4.5 },
+      { "name": "Mughal Darbar", "rating": 4.3 }
+    ],
+    "hotels": [
+      { "name": "The Lalit Grand Palace Srinagar", "price": "₹22,000/night", "rating": 4.8 },
+      { "name": "Vivanta Dal View", "price": "₹18,000/night", "rating": 4.7 }
+    ],
+    "travelTips": "Stay in a houseboat on Dal Lake for a unique experience. Try the traditional Kashmiri Wazwan."
+  },
+  {
+    "id": 16,
+    "name": "Kodaikanal",
+    "coordinates": { "lat": 10.2383, "lng": 77.4892 },
+    "description": "Known as the 'Princess of Hill Stations', a charming and misty hill town in Tamil Nadu.",
+    "images": [
+      "assets/images/kodaikanal/gettyimages-1178872982-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-1402974697-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-2151251565-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-458246773-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-459760229-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-478381203-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-558950893-612x612.jpg",
+      "assets/images/kodaikanal/gettyimages-599456346-612x612.jpg"
+    ],
+    "bestSeason": "September to May",
+    "suggestedDays": "3-4 days",
+    "tags": ["mountains", "lakes", "relaxation", "nature"],
+    "placesToVisit": [
+      { "name": "Kodaikanal Lake", "description": "A man-made, star-shaped lake perfect for boating." },
+      { "name": "Coaker's Walk", "description": "A scenic walking path with stunning valley views." },
+      { "name": "Pillar Rocks", "description": "Three giant rock pillars standing shoulder to shoulder." }
+    ],
+    "rentals": [
+      { "type": "Bicycle", "contact": "Kodai Cycle Rentals - 9988776659" },
+      { "type": "Car", "contact": "Kodaikanal Taxi - 9988776660" }
+    ],
+    "restaurants": [
+      { "name": "Cloud Street", "rating": 4.4 },
+      { "name": "Tava Restaurant", "rating": 4.2 }
+    ],
+    "hotels": [
+      { "name": "The Tamara Kodai", "price": "₹20,000/night", "rating": 4.8 },
+      { "name": "Sterling Kodai Lake", "price": "₹7,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Try the homemade chocolates and the local eucalyptus oils. The weather can be chilly, so pack accordingly."
+  },
+  {
+    "id": 17,
+    "name": "Ladakh",
+    "coordinates": { "lat": 34.1526, "lng": 77.5771 },
+    "description": "A high-altitude desert region in the Himalayas, known for its dramatic landscapes, Buddhist monasteries, and adventure sports.",
+    "images": [
+      "assets/images/ladakh/gettyimages-1163505124-612x612.jpg",
+      "assets/images/ladakh/gettyimages-1168098418-612x612.jpg",
+      "assets/images/ladakh/gettyimages-1297500238-612x612.jpg",
+      "assets/images/ladakh/gettyimages-168363968-612x612.jpg",
+      "assets/images/ladakh/gettyimages-187565064-612x612.jpg",
+      "assets/images/ladakh/gettyimages-1947093127-612x612.jpg",
+      "assets/images/ladakh/gettyimages-461206757-612x612.jpg",
+      "assets/images/ladakh/gettyimages-533687955-612x612.jpg",
+      "assets/images/ladakh/gettyimages-591714797-612x612.jpg",
+      "assets/images/ladakh/gettyimages-617857728-612x612.jpg",
+      "assets/images/ladakh/gettyimages-924915202-612x612.jpg",
+      "assets/images/ladakh/gettyimages-982302532-612x612.jpg"
+    ],
+    "bestSeason": "June to September",
+    "suggestedDays": "8-12 days",
+    "tags": ["mountains", "adventure", "buddhist", "desert"],
+    "placesToVisit": [
+      { "name": "Pangong Tso Lake", "description": "A stunning high-altitude lake that changes colors." },
+      { "name": "Nubra Valley", "description": "Known for its sand dunes and double-humped camels." },
+      { "name": "Thiksey Monastery", "description": "A magnificent monastery resembling the Potala Palace in Lhasa." }
+    ],
+    "rentals": [
+      { "type": "Bike", "contact": "Leh Bike Rentals - 7890123453" },
+      { "type": "SUV", "contact": "Himalayan Explorers - 7890123454" }
+    ],
+    "restaurants": [
+      { "name": "The Tibetan Kitchen", "rating": 4.6 },
+      { "name": "Bon Appetit", "rating": 4.5 }
+    ],
+    "hotels": [
+      { "name": "The Grand Dragon Ladakh", "price": "₹15,000/night", "rating": 4.7 },
+      { "name": "Stok Palace Heritage Hotel", "price": "₹25,000/night", "rating": 4.8 }
+    ],
+    "travelTips": "Acclimatize properly to the high altitude for at least 48 hours upon arrival to avoid sickness."
+  },
+  {
+    "id": 18,
+    "name": "Lonavala",
+    "coordinates": { "lat": 18.7558, "lng": 73.4091 },
+    "description": "A popular hill station near Mumbai and Pune, especially vibrant during the monsoon season with lush greenery and waterfalls.",
+    "images": [
+      "assets/images/lonavala/gettyimages-1408069498-612x612.jpg",
+      "assets/images/lonavala/gettyimages-487667662-612x612.jpg",
+      "assets/images/lonavala/gettyimages-520957992-612x612.jpg",
+      "assets/images/lonavala/gettyimages-667264808-612x612.jpg",
+      "assets/images/lonavala/gettyimages-898885432-612x612.jpg",
+      "assets/images/lonavala/gettyimages-982370068-612x612.jpg",
+      "assets/images/lonavala/gettyimages-999332572-612x612.jpg"
+    ],
+    "bestSeason": "June to September (Monsoon)",
+    "suggestedDays": "1-2 days",
+    "tags": ["mountains", "monsoon", "weekend", "nature"],
+    "placesToVisit": [
+      { "name": "Bhushi Dam", "description": "A popular spot where water overflows onto a series of steps." },
+      { "name": "Tiger's Leap", "description": "A clifftop with a sheer drop, offering panoramic views." },
+      { "name": "Karla Caves", "description": "Ancient Buddhist rock-cut cave shrines." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Lonavala Taxi - 9123456785" }
+    ],
+    "restaurants": [
+      { "name": "The Kinara Village Dhaba", "rating": 4.3 },
+      { "name": "German Bakery Wunderbar", "rating": 4.2 }
+    ],
+    "hotels": [
+      { "name": "Fariyas Resort Lonavala", "price": "₹10,000/night", "rating": 4.5 },
+      { "name": "Della Resorts", "price": "₹15,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "It gets very crowded on weekends, especially during monsoon. Try the famous Lonavala chikki (a sweet brittle)."
+  },
+  {
+    "id": 19,
+    "name": "Mahabaleshwar",
+    "coordinates": { "lat": 17.9221, "lng": 73.6587 },
+    "description": "A beautiful hill station in the Western Ghats, famous for its strawberry farms, numerous rivers, and magnificent peaks.",
+    "images": [
+      "assets/images/mahabaleshwar/gettyimages-659130526-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-80000503-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-980560724-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-981373418-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-984642012-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-987688414-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-991872044-612x612.jpg",
+      "assets/images/mahabaleshwar/gettyimages-995695518-612x612.jpg"
+    ],
+    "bestSeason": "October to June",
+    "suggestedDays": "2-3 days",
+    "tags": ["mountains", "nature", "strawberry", "relaxation"],
+    "placesToVisit": [
+      { "name": "Arthur's Seat", "description": "A point offering breathtaking views of the valley." },
+      { "name": "Venna Lake", "description": "A serene lake where you can enjoy boating." },
+      { "name": "Mapro Garden", "description": "Famous for its strawberry produce and products." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Mahabaleshwar Tourist Taxi - 9988776661" }
+    ],
+    "restaurants": [
+      { "name": "Farmhouse Bistro", "rating": 4.6 },
+      { "name": "The Grapevine Restaurant", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "Le Meridien Mahabaleshwar Resort & Spa", "price": "₹16,000/night", "rating": 4.7 },
+      { "name": "Brightland Resort & Spa", "price": "₹12,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Visit a strawberry farm during the season (December to February) and taste fresh strawberries with cream."
+  },
+  {
+    "id": 20,
+    "name": "Meghalaya",
+    "coordinates": { "lat": 25.4670, "lng": 91.3662 },
+    "description": "Known as the 'Abode of Clouds', this state is famous for its living root bridges, waterfalls, and record-breaking rainfall.",
+    "images": [
+      "assets/images/meghalaya/gettyimages-1124341410-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-1154597574-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-1272828281-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-1330985509-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-1660690104-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-2227449827-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-521360212-612x612.jpg",
+      "assets/images/meghalaya/gettyimages-564322259-612x612.jpg"
+    ],
+    "bestSeason": "October to June",
+    "suggestedDays": "6-7 days",
+    "tags": ["nature", "monsoon", "waterfalls", "caves"],
+    "placesToVisit": [
+      { "name": "Living Root Bridges", "description": "Unique bridges grown from the roots of rubber fig trees, especially near Cherrapunji." },
+      { "name": "Nohkalikai Falls", "description": "The tallest plunge waterfall in India." },
+      { "name": "Mawlynnong", "description": "Often referred to as the cleanest village in Asia." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Meghalaya Tourist Cabs - 8876543214" }
+    ],
+    "restaurants": [
+      { "name": "Cafe Shillong", "rating": 4.5 },
+      { "name": "Jiva Veg", "rating": 4.3 }
+    ],
+    "hotels": [
+      { "name": "Ri Kynjai", "price": "₹12,000/night", "rating": 4.7 },
+      { "name": "Polo Towers Shillong", "price": "₹8,000/night", "rating": 4.4 }
+    ],
+    "travelTips": "Always carry a raincoat or umbrella, regardless of the season. Explore the unique cave systems."
+  },
+  {
+    "id": 21,
+    "name": "Mount Abu",
+    "coordinates": { "lat": 24.5926, "lng": 72.7156 },
+    "description": "The only hill station in the desert state of Rajasthan, known for its cool climate and the beautiful Dilwara Jain Temples.",
+    "images": [
+      "assets/images/mount abu/gettyimages-1223399523-612x612.jpg",
+      "assets/images/mount abu/gettyimages-1271189103-612x612.jpg",
+      "assets/images/mount abu/gettyimages-1305921572-612x612.jpg",
+      "assets/images/mount abu/gettyimages-1461357973-612x612.jpg",
+      "assets/images/mount abu/gettyimages-166734220-612x612.jpg",
+      "assets/images/mount abu/gettyimages-567931465-612x612.jpg",
+      "assets/images/mount abu/gettyimages-824647054-612x612.jpg",
+      "assets/images/mount abu/gettyimages-909377374-612x612.jpg"
+    ],
+    "bestSeason": "October to March",
+    "suggestedDays": "2-3 days",
+    "tags": ["mountains", "desert", "temples", "relaxation"],
+    "placesToVisit": [
+      { "name": "Dilwara Temples", "description": "An outstanding group of Jain temples known for their intricate marble carvings." },
+      { "name": "Nakki Lake", "description": "A picturesque lake where you can enjoy boating." },
+      { "name": "Guru Shikhar", "description": "The highest point of the Aravalli Range, offering panoramic views." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Mount Abu Taxi Service - 7890123455" }
+    ],
+    "restaurants": [
+      { "name": "Mulberry Tree Restaurant", "rating": 4.4 },
+      { "name": "Dawat Restaurant", "rating": 4.1 }
+    ],
+    "hotels": [
+      { "name": "Hotel Hillock", "price": "₹7,000/night", "rating": 4.6 },
+      { "name": "Cama Rajputana Club Resort", "price": "₹9,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Visit the Dilwara Temples in the morning to appreciate the marble work in natural light."
+  },
+  {
+    "id": 22,
+    "name": "Mysore",
+    "coordinates": { "lat": 12.2958, "lng": 76.6394 },
+    "description": "The 'City of Palaces', known for its rich heritage, magnificent palaces, and vibrant Dasara festival.",
+    "images": [
+      "assets/images/mysore/gettyimages-1373012781-612x612.jpg",
+      "assets/images/mysore/gettyimages-172124032-612x612.jpg",
+      "assets/images/mysore/gettyimages-200273259-001-612x612.jpg",
+      "assets/images/mysore/gettyimages-2163804766-612x612.jpg",
+      "assets/images/mysore/gettyimages-2180426121-612x612.jpg",
+      "assets/images/mysore/gettyimages-521344438-612x612.jpg",
+      "assets/images/mysore/gettyimages-595984024-612x612.jpg",
+      "assets/images/mysore/gettyimages-621347718-612x612.jpg"
+    ],
+    "bestSeason": "October to February",
+    "suggestedDays": "2-3 days",
+    "tags": ["history", "culture", "palace", "yoga"],
+    "placesToVisit": [
+      { "name": "Mysore Palace", "description": "The former seat of the Wodeyar dynasty, famous for its grandeur and evening illumination." },
+      { "name": "Brindavan Gardens", "description": "A beautiful garden with musical fountains." },
+      { "name": "Chamundi Hill", "description": "Home to the Chamundeshwari Temple and offering panoramic views of the city." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Mysore Royal Cabs - 8887776664" }
+    ],
+    "restaurants": [
+      { "name": "Vinayaka Mylari", "rating": 4.7 },
+      { "name": "GTR - Gayatri Tiffin Room", "rating": 4.5 }
+    ],
+    "hotels": [
+      { "name": "Radisson Blu Plaza Hotel Mysore", "price": "₹9,000/night", "rating": 4.6 },
+      { "name": "Grand Mercure Mysore", "price": "₹7,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Don't miss the Mysore Palace illumination on Sundays and public holidays. Try the famous Mysore Pak sweet."
+  },
+  {
+    "id": 23,
+    "name": "Ooty",
+    "coordinates": { "lat": 11.4102, "lng": 76.6950 },
+    "description": "The 'Queen of Hill Stations', a popular colonial-era hill station in the Nilgiri Hills with picturesque gardens and lakes.",
+    "images": [
+      "assets/images/ooty/gettyimages-145779406-612x612.jpg",
+      "assets/images/ooty/gettyimages-1503422149-612x612.jpg",
+      "assets/images/ooty/gettyimages-1540467269-612x612.jpg",
+      "assets/images/ooty/gettyimages-162331811-612x612.jpg",
+      "assets/images/ooty/gettyimages-170963804-612x612.jpg",
+      "assets/images/ooty/gettyimages-183471749-612x612.jpg",
+      "assets/images/ooty/gettyimages-503823559-612x612.jpg",
+      "assets/images/ooty/gettyimages-522998043-612x612.jpg",
+      "assets/images/ooty/gettyimages-834789482-612x612.jpg"
+    ],
+    "bestSeason": "October to June",
+    "suggestedDays": "2-3 days",
+    "tags": ["mountains", "lakes", "nature", "tea"],
+    "placesToVisit": [
+      { "name": "Ooty Botanical Gardens", "description": "A sprawling garden with a vast collection of plants." },
+      { "name": "Ooty Lake", "description": "A man-made lake with a boathouse." },
+      { "name": "Nilgiri Mountain Railway", "description": "A UNESCO World Heritage toy train offering scenic views." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Ooty Travels - 9988776662" }
+    ],
+    "restaurants": [
+      { "name": "Earl's Secret", "rating": 4.6 },
+      { "name": "Place To Bee", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "Savoy - IHCL SeleQtions", "price": "₹14,000/night", "rating": 4.7 },
+      { "name": "Sterling Ooty Fern Hill", "price": "₹6,000/night", "rating": 4.4 }
+    ],
+    "travelTips": "Take a ride on the Nilgiri Mountain Railway for a memorable experience. Buy fresh tea from a local plantation."
+  },
+  {
+    "id": 24,
+    "name": "Pondicherry",
+    "coordinates": { "lat": 11.9416, "lng": 79.8083 },
+    "description": "A charming coastal town with a unique French colonial heritage, serene beaches, and the spiritual community of Auroville.",
+    "images": [
+      "assets/images/pondicherry/gettyimages-172593850-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-469798500-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-516056865-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-520812046-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-520817384-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-535167938-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-536063142-612x612.jpg",
+      "assets/images/pondicherry/gettyimages-536063772-612x612.jpg"
+    ],
+    "bestSeason": "October to March",
+    "suggestedDays": "3-4 days",
+    "tags": ["beach", "culture", "french", "spiritual"],
+    "placesToVisit": [
+      { "name": "French Quarter (White Town)", "description": "Characterized by its colonial villas, colorful walls, and chic boutiques." },
+      { "name": "Auroville", "description": "An experimental township dedicated to human unity, with the Matrimandir at its center." },
+      { "name": "Promenade Beach", "description": "A popular stretch of beachfront for evening walks." }
+    ],
+    "rentals": [
+      { "type": "Scooter", "contact": "Pondy Bike Rentals - 7890123456" },
+      { "type": "Bicycle", "contact": "My-Pondy Tour - 7890123457" }
+    ],
+    "restaurants": [
+      { "name": "Cafe des Arts", "rating": 4.5 },
+      { "name": "Le Dupleix", "rating": 4.6 }
+    ],
+    "hotels": [
+      { "name": "Palais de Mahe - CGH Earth", "price": "₹13,000/night", "rating": 4.7 },
+      { "name": "The Promenade", "price": "₹9,000/night", "rating": 4.5 }
+    ],
+    "travelTips": "Explore the French Quarter on foot or by bicycle. Try the French-inspired cuisine at the local cafes."
+  },
+  {
+    "id": 25,
+    "name": "Rann of Kutch",
+    "coordinates": { "lat": 23.7337, "lng": 70.0577 },
+    "description": "A massive salt marsh in the Thar Desert, famous for its surreal white landscape and the vibrant Rann Utsav festival.",
+    "images": [
+      "assets/images/rann of kutch/gettyimages-1492831631-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-2201753061-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-2201753731-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-489048841-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-636581162-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-86070992-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-997596590-612x612.jpg",
+      "assets/images/rann of kutch/gettyimages-999943888-612x612.jpg"
+    ],
+    "bestSeason": "November to February",
+    "suggestedDays": "2-3 days",
+    "tags": ["desert", "culture", "festival", "nature"],
+    "placesToVisit": [
+      { "name": "Great Rann of Kutch", "description": "The vast white salt desert, especially magical under the full moon." },
+      { "name": "Kalo Dungar (Black Hill)", "description": "The highest point in Kutch, offering a panoramic view of the Rann." },
+      { "name": "Rann Utsav", "description": "A cultural festival celebrating the region's art, music, and traditions." }
+    ],
+    "rentals": [
+      { "type": "Car", "contact": "Kutch Car Rental - 9123456786" }
+    ],
+    "restaurants": [
+      { "name": "Hotel Prince", "rating": 4.2 },
+      { "name": "Nooran-da-Dhaba", "rating": 4.1 }
+    ],
+    "hotels": [
+      { "name": "Rann Utsav - The Tent City", "price": "₹10,000/night", "rating": 4.5 },
+      { "name": "Rann Riders", "price": "₹8,000/night", "rating": 4.4 }
+    ],
+    "travelTips": "Visit during a full moon night for an unforgettable experience. A government permit is required to visit the salt desert."
+  },
+  {
+    "id": 26,
+    "name": "Sikkim",
+    "coordinates": { "lat": 27.5330, "lng": 88.5122 },
+    "description": "A small but stunningly beautiful state in the Himalayas, known for its pristine landscapes, Buddhist monasteries, and friendly culture.",
+    "images": [
+      "assets/images/sikkim/gettyimages-1207272018-612x612.jpg",
+      "assets/images/sikkim/gettyimages-132055268-612x612.jpg",
+      "assets/images/sikkim/gettyimages-157606913-612x612.jpg",
+      "assets/images/sikkim/gettyimages-170965990-612x612.jpg",
+      "assets/images/sikkim/gettyimages-1736687840-612x612.jpg",
+      "assets/images/sikkim/gettyimages-458991497-612x612.jpg",
+      "assets/images/sikkim/gettyimages-539142262-612x612.jpg",
+      "assets/images/sikkim/gettyimages-562575233-612x612.jpg",
+      "assets/images/sikkim/gettyimages-951045662-612x612.jpg"
+    ],
+    "bestSeason": "March to May, October to December",
+    "suggestedDays": "7-9 days",
+    "tags": ["mountains", "buddhist", "nature", "adventure"],
+    "placesToVisit": [
+      { "name": "Tsomgo Lake", "description": "A glacial lake considered sacred by the local people." },
+      { "name": "Rumtek Monastery", "description": "One of the largest and most significant monasteries in Sikkim." },
+      { "name": "Nathula Pass", "description": "A mountain pass on the Indo-China border." }
+    ],
+    "rentals": [
+      { "type": "SUV", "contact": "Sikkim Himalayan Tours - 9988776663" }
+    ],
+    "restaurants": [
+      { "name": "Taste of Tibet", "rating": 4.5 },
+      { "name": "The Coffee Shop", "rating": 4.4 }
+    ],
+    "hotels": [
+      { "name": "Mayfair Spa Resort & Casino", "price": "₹14,000/night", "rating": 4.7 },
+      { "name": "Elgin Nor-Khill", "price": "₹11,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "A permit is required for certain areas like Tsomgo Lake and Nathula Pass. Try the local 'chang' (fermented millet drink)."
+  },
+  {
+    "id": 27,
+    "name": "Spiti Valley",
+    "coordinates": { "lat": 32.2462, "lng": 78.0349 },
+    "description": "A cold desert mountain valley in Himachal Pradesh, known for its stark landscapes, ancient monasteries, and Tibetan Buddhist culture.",
+    "images": [
+      "assets/images/spiti valley/gettyimages-1272121983-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-1295423447-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-180616520-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-183964396-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-2222575969-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-540308351-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-660587298-612x612.jpg",
+      "assets/images/spiti valley/gettyimages-825901470-612x612.jpg"
+    ],
+    "bestSeason": "June to September",
+    "suggestedDays": "9-12 days",
+    "tags": ["mountains", "desert", "adventure", "buddhist", "roadtrip"],
+    "placesToVisit": [
+      { "name": "Key Monastery", "description": "The largest monastery in Spiti Valley, a famous center for Buddhist learning." },
+      { "name": "Chandratal Lake", "description": "A beautiful crescent-shaped lake." },
+      { "name": "Hikkim", "description": "Home to the world's highest post office." }
+    ],
+    "rentals": [
+      { "type": "SUV", "contact": "Spiti Holiday Adventure - 8876543215" },
+      { "type": "Bike", "contact": "Himalayan Motorcycle Tours - 8876543216" }
+    ],
+    "restaurants": [
+      { "name": "Sol Cafe", "rating": 4.7 },
+      { "name": "The Himalayan Cafe", "rating": 4.5 }
+    ],
+    "hotels": [
+      { "name": "Hotel Deyzor", "price": "₹4,000/night", "rating": 4.8 },
+      { "name": "The Grand Dewachen", "price": "₹6,000/night", "rating": 4.6 }
+    ],
+    "travelTips": "The journey to Spiti is as beautiful as the destination. Be prepared for basic accommodations and limited connectivity."
   }
 ]
