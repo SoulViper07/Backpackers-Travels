@@ -10,6 +10,7 @@ from google.api_core import exceptions as google_exceptions
 # Load environment variables
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 GEMINI_API_KEY = getenv("GEMINI_API_KEY")
+GEMINI_MODEL = getenv("GEMINI_MODEL", "gemini-1.5-flash") # Default to gemini-1.5-flash if not set
 
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY not found in .env file or environment variables")
@@ -21,7 +22,7 @@ logging.basicConfig(level=logging.INFO)
 genai.configure(api_key=GEMINI_API_KEY)
 system_instruction = "You are GuideAI, a friendly and expert travel assistant. You must only answer questions related to travel, tourism, geography, and trip planning. If a user asks about anything else, you must politely decline and state that you are a travel assistant and cannot answer questions on that topic. Your answers should be concise and to the point. Provide information in a nutshell, using bullet points if possible. If the user asks for more details, then you can elaborate."
 model = genai.GenerativeModel(
-    'gemini-2.5-flash',
+    GEMINI_MODEL,
     system_instruction=system_instruction
 )
 
