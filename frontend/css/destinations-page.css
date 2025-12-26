@@ -1,0 +1,15 @@
+
+/* --- Destinations Page Specific Styles --- */
+.hero-section-short h1.display-3 {
+    color: #F8F8F8; /* White font color */
+    font-weight: 700; /* Make it bolder */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow */
+    border-bottom: 2px solid #F8F8F8; /* A little border */
+    padding-bottom: 10px; /* Space for the border */
+    margin-bottom: 20px; /* Space between heading and subheading */
+}
+
+.hero-section-short p.lead {
+    border-top: 1px solid #F8F8F8; /* A little border */
+    padding-top: 10px; /* Space for the border */
+}
