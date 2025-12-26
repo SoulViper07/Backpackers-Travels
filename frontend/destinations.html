@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Destinations Page Specific CSS -->
     <link rel="stylesheet" href="css/destinations-page.css">
+    <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="css/chatbot.css">
     <!-- Google Fonts - Poppins & Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
@@ -85,5 +87,26 @@
     <!-- Custom JS -->
     <script src="js/galleryLoader.js"></script>
     <script src="js/destinations-all.js"></script> <!-- This is the new script for this page -->
+    <script src="js/chatbot.js"></script>
+    <!-- Chatbot Button -->
+    <button id="chat-button" class="chat-button">
+        <img src="https://png.pngtree.com/png-clipart/20230824/original/pngtree-chat-bot-icon-vector-picture-image_8418770.png" alt="GuideAI Chatbot Icon" class="chatbot-image-icon">
+    </button>
+
+    <!-- Chatbot Modal -->
+    <div id="chat-modal" class="chat-modal">
+        <div class="chat-modal-content">
+            <span class="close-button" id="close-button">&times;</span>
+            <h2 class="chatbot-title">GuideAI Travel Planner</h2> <!-- Added Chatbot Title -->
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will appear here -->
+                <div class="chat-bubble bot">Hello! I'm GuideAI, your personal travel planner. How can I help you plan your adventure today?</div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Type your message...">
+                <button id="send-button" class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
