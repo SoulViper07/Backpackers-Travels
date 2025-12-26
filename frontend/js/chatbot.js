@@ -109,15 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to add emojis to bot responses
     function addEmojis(text) {
-        if (!text) return '';
-        const words = text.split(' ');
-        const newWords = words.map(word => {
-            if (Math.random() < 0.15) { // 15% chance to add an emoji after a word
-                return word + ' ' + travelEmojis[Math.floor(Math.random() * travelEmojis.length)];
-            }
-            return word;
-        });
-        return newWords.join(' ');
+        return text; // Simply return the original text without adding emojis
     }
 
     // Function to add a message to the chat box
