@@ -4,9 +4,7 @@ from dotenv import load_dotenv
 from os import getenv
 import os
 import logging
-from groq import Groq
-from groq.types.chat import ChatCompletionMessageParam # Import for message type hinting (optional but good practice)
-from groq.lib.httpx_client import APIError # For specific API error handling
+from groq import Groq, APIError
 
 # Load environment variables
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
