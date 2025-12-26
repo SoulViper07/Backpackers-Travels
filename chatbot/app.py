@@ -4,27 +4,24 @@ from dotenv import load_dotenv
 from os import getenv
 import os
 import logging
-import google.generativeai as genai
-from google.api_core import exceptions as google_exceptions
+from groq import Groq
+from groq.types.chat import ChatCompletionMessageParam # Import for message type hinting (optional but good practice)
+from groq.lib.httpx_client import APIError # For specific API error handling
 
 # Load environment variables
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
-GEMINI_API_KEY = getenv("GEMINI_API_KEY")
-GEMINI_MODEL = getenv("GEMINI_MODEL", "gemini-pro") # Default to gemini-pro if not set
+GROQ_API_KEY = getenv("GROQ_API_KEY")
+GROQ_MODEL = getenv("GROQ_MODEL", "llama-3.3-70b-versatile") # Default to the fastest free chat model
 
-if not GEMINI_API_KEY:
-    raise ValueError("GEMINI_API_KEY not found in .env file or environment variables")
+if not GROQ_API_KEY:
+    raise ValueError("GROQ_API_KEY not found in .env file or environment variables")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
-# Configure Google Gemini API
-genai.configure(api_key=GEMINI_API_KEY)
+# Configure Groq client
+client = Groq(api_key=GROQ_API_KEY)
 system_instruction = "You are GuideAI, a friendly and expert travel assistant. You must only answer questions related to travel, tourism, geography, and trip planning. If a user asks about anything else, you must politely decline and state that you are a travel assistant and cannot answer questions on that topic. Your answers should be concise and to the point. Provide information in a nutshell, using bullet points if possible. If the user asks for more details, then you can elaborate."
-model = genai.GenerativeModel(
-    GEMINI_MODEL,
-    system_instruction=system_instruction
-)
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -37,18 +34,27 @@ def chat():
 
     try:
         app.logger.info(f"Received message: {user_message}")
-        chat_session = model.start_chat(history=[])
-        response = chat_session.send_message(user_message)
-        
-        return jsonify({"reply": response.text})
 
-    except google_exceptions.DeadlineExceeded as e:
-        app.logger.error(f"Timeout error processing message '{user_message}': {e}")
-        return jsonify({"error": "The request to the AI service timed out. Please try again later."}), 504
+        messages = [
+            ChatCompletionMessageParam(role="system", content=system_instruction),
+            ChatCompletionMessageParam(role="user", content=user_message),
+        ]
 
-    except google_exceptions.GoogleAPICallError as e:
-        app.logger.error(f"API call error processing message '{user_message}': {e}")
-        return jsonify({"error": "A problem occurred with the AI service. Please check credentials and configuration."}), 502
+        chat_completion = client.chat.completions.create(
+            messages=messages,
+            model=GROQ_MODEL,
+            temperature=0.7, # You can adjust temperature for creativity
+            max_tokens=1024, # Adjust based on desired response length
+        )
+
+        reply_content = chat_completion.choices[0].message.content
+        return jsonify({"reply": reply_content})
+
+    except APIError as e:
+        app.logger.error(f"Groq API call error processing message '{user_message}': {e}")
+        # Groq API errors can have specific codes, but generally we return 502 for upstream API issues
+        status_code = e.status_code if hasattr(e, 'status_code') else 502
+        return jsonify({"error": f"A problem occurred with the AI service: {e.message}. Please check credentials and configuration, or try again later."}), status_code
 
     except Exception as e:
         app.logger.error(f"An unexpected error occurred processing message '{user_message}': {e}")
