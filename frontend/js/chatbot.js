@@ -194,6 +194,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Voice recognition
+    const voiceButton = document.getElementById('voice-button');
+    if (voiceButton) {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            const recognition = new SpeechRecognition();
+            recognition.continuous = false;
+            recognition.lang = 'en-US';
+            recognition.interimResults = false;
+            recognition.maxAlternatives = 1;
+
+            voiceButton.addEventListener('click', () => {
+                recognition.start();
+                voiceButton.classList.add('listening');
+                voiceButton.disabled = true;
+            });
+
+            recognition.addEventListener('result', (e) => {
+                const transcript = Array.from(e.results)
+                    .map(result => result[0])
+                    .map(result => result.transcript)
+                    .join('');
+                chatInput.value = transcript;
+                sendMessage();
+            });
+
+            recognition.addEventListener('error', (e) => {
+                console.error('Speech recognition error:', e.error);
+                addMessage('Sorry, I had trouble understanding. Please try again.', 'bot');
+            });
+
+            recognition.addEventListener('end', () => {
+                voiceButton.classList.remove('listening');
+                voiceButton.disabled = false;
+            });
+
+        } else {
+            voiceButton.style.display = 'none';
+            console.log("Speech recognition not supported in this browser.");
+        }
+    }
+
     // Function to fetch and render FAQs
     async function fetchFAQs() {
         if (!faqList) return; // Ensure faqList element exists
