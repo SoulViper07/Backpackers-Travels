@@ -5,7 +5,6 @@ from os import getenv
 import os
 import logging
 from groq import Groq, APIError
-from groq.types.chat import ChatCompletionMessageParam
 
 # Load environment variables
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
@@ -35,8 +34,8 @@ def chat():
         app.logger.info(f"Received message: {user_message}")
 
         messages = [
-            ChatCompletionMessageParam(role="system", content=system_instruction),
-            ChatCompletionMessageParam(role="user", content=user_message),
+            {"role": "system", "content": system_instruction},
+            {"role": "user", "content": user_message},
         ]
 
         chat_completion = client.chat.completions.create(
