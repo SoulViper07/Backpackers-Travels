@@ -10,7 +10,7 @@ from google.api_core import exceptions as google_exceptions
 # Load environment variables
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 GEMINI_API_KEY = getenv("GEMINI_API_KEY")
-GEMINI_MODEL = getenv("GEMINI_MODEL", "models/gemini-1.5-flash") # Default to models/gemini-1.5-flash if not set
+GEMINI_MODEL = getenv("GEMINI_MODEL", "gemini-2.0-flash-001") # Default to gemini-2.0-flash-001 if not set
 
 if not GEMINI_API_KEY:
     raise ValueError("GEMINI_API_KEY not found in .env file or environment variables")
