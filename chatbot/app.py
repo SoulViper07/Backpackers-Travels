@@ -26,17 +26,25 @@ CORS(app)  # Enable CORS for all routes
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    user_message = request.json.get('message')
+    data = request.json
+    user_message = data.get('message')
+    conversation_history = data.get('history', []) # Get history, default to empty list
+
     if not user_message:
         return jsonify({"error": "No message provided"}), 400
 
     try:
         app.logger.info(f"Received message: {user_message}")
 
-        messages = [
-            {"role": "system", "content": system_instruction},
-            {"role": "user", "content": user_message},
-        ]
+        # Start with system instruction
+        messages = [{"role": "system", "content": system_instruction}]
+
+        # Add previous conversation history
+        for msg in conversation_history:
+            messages.append({"role": msg["role"], "content": msg["content"]})
+
+        # Add current user message
+        messages.append({"role": "user", "content": user_message})
 
         chat_completion = client.chat.completions.create(
             messages=messages,

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let conversationHistory = []; // Initialize conversation history
     const chatButton = document.getElementById('chat-button');
     const chatModal = document.getElementById('chat-modal');
     const closeButton = document.getElementById('close-button');
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to add a message to the chat box
-    function addMessage(message, sender) {
+    function addMessage(message, sender, saveToHistory = true) {
         const messageElement = document.createElement('div');
         messageElement.classList.add('chat-bubble', sender);
         
@@ -124,16 +125,23 @@ document.addEventListener('DOMContentLoaded', () => {
                     const processedMessage = addEmojis(message);
                     typeWriterEffect(messageElement, processedMessage, 1, () => {
                         messageElement.innerHTML = parseMarkdown(messageElement.textContent);
+                        if (saveToHistory) {
+                            conversationHistory.push({ role: 'assistant', content: message });
+                        }
                     });
                 } else {
                     messageElement.textContent = message;
+                    if (saveToHistory) {
+                        conversationHistory.push({ role: 'user', content: message });
+                    }
                 }    }
 
     // Function to send message to backend
     async function sendMessage() {
         const message = chatInput.value.trim();
         if (message) {
-            addMessage(message, 'user');
+            addMessage(message, 'user'); // addMessage will now save to history
+
             chatInput.value = ''; // Clear input field
 
             try {
@@ -149,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ message: message }),
+                    body: JSON.stringify({ message: message, history: conversationHistory }), // Send conversation history
                 });
 
                 const data = await response.json();
@@ -158,18 +166,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 chatBox.removeChild(loadingBubble);
 
                 if (response.ok) {
-                    addMessage(data.reply, 'bot');
+                    addMessage(data.reply, 'bot'); // addMessage will now save to history
                 } else {
-                    addMessage(`Error: ${data.error || 'Something went wrong'}`, 'bot');
+                    // Don't save error messages to history
+                    addMessage(`Error: ${data.error || 'Something went wrong'}`, 'bot', false);
                 }
             } catch (error) {
                 console.error('Error sending message:', error);
                 // Remove loading indicator if present
-                const loadingBubble = chatBox.querySelector('.loading-dots')?.parentNode;
+                const loadingBubble = chatBox.querySelector('.typing')?.parentNode;
                 if (loadingBubble) {
                     chatBox.removeChild(loadingBubble);
                 }
-                addMessage('Error: Could not connect to the chatbot.', 'bot');
+                addMessage('Error: Could not connect to the chatbot.', 'bot', false); // Don't save error messages to history
             }
         }
     }
