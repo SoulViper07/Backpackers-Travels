@@ -5,6 +5,7 @@ from os import getenv
 import os
 import logging
 from groq import Groq, APIError
+from groq.types.chat import ChatCompletionMessageParam
 
 # Load environment variables
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
