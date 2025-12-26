@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 genai.configure(api_key=GEMINI_API_KEY)
 system_instruction = "You are GuideAI, a friendly and expert travel assistant. You must only answer questions related to travel, tourism, geography, and trip planning. If a user asks about anything else, you must politely decline and state that you are a travel assistant and cannot answer questions on that topic. Your answers should be concise and to the point. Provide information in a nutshell, using bullet points if possible. If the user asks for more details, then you can elaborate."
 model = genai.GenerativeModel(
-    'gemini-1.5-flash',
+    'gemini-3-flash',
     system_instruction=system_instruction
 )
 
