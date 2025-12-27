@@ -241,9 +241,10 @@
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .chat-modal-content {
-        width: 95%;
-        margin: 10px;
-        max-height: 95%;
+        width: 85%; /* Slightly smaller width for mobile */
+        max-width: 350px; /* Limit max-width as well */
+        margin: 10px auto; /* Center the modal with auto margins */
+        max-height: 90%; /* Slightly reduce max-height */
     }
 
     .chat-button {
