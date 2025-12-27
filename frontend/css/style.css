@@ -286,8 +286,30 @@ main.container {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(50, 50, 50, 0.5); /* Dark shadow and subtle dark glow */
 }
 
-#cycling-subheading {
-    min-height: 70px; /* Fixed height to prevent layout shifts during animation */
+/* Responsive adjustments for smaller screens (Android interfaces) */
+@media (max-width: 600px) {
+    .main-heading {
+        font-size: 1.2rem; /* Reduced font size for smaller screens */
+    }
+
+    #cycling-subheading {
+        min-height: 120px; /* Further increased min-height for Android interfaces */
+        font-size: 1rem; /* Further reduced font size for better fit on small screens */
+    }
+
+    /* Further adjustments for navbar elements on small screens */
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Push toggler to the right if needed */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center nav links when collapsed */
+    }
 }
 
 .navbar-brand .fa-hiking {
