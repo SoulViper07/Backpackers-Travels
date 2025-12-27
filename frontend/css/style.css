@@ -297,5 +297,26 @@ main.container {
     transform: scale(1.1); /* Slight grow effect on hover */
 }
 
+/* Responsive adjustments for smaller screens (Android interfaces) */
+@media (max-width: 600px) {
+    .main-heading {
+        font-size: 1.2rem; /* Reduced font size for smaller screens */
+    }
+
+    /* Further adjustments for navbar elements on small screens */
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Push toggler to the right if needed */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center nav links when collapsed */
+    }
+}
+
 
 
