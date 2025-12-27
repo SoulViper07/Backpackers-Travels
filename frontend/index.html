@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Locomotive Scroll CSS -->
-    <link rel="stylesheet" href="node_modules/locomotive-scroll/dist/locomotive-scroll.min.css">
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="css/chatbot.css">
     <!-- Google Fonts - Poppins -->
@@ -21,7 +19,7 @@
             <!-- Favicon - Trekking/Hiking Icon -->
             <link rel="icon" href="assets/images/favicon.png">
 </head>
-<body data-scroll-container>
+<body>
     <div id="loader-wrapper">
         <div class="loader"></div>
         <div class="loader-text">Loading Adventure...</div>
@@ -54,7 +52,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section breathes-subtle" data-scroll-section>
+    <header class="hero-section breathes-subtle">
         <div class="container text-center text-white">
             <h1 id="hero-title" class="display-3">Discover Your Next Adventure</h1>
             <p id="cycling-subheading" class="lead cycling-typewriter"></p>
@@ -63,9 +61,9 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container my-5" data-scroll-section>
+    <main class="container my-5">
         <!-- Nearby Places Section -->
-        <section id="nearby-places" class="mb-5 p-4 rounded shadow-sm animate-on-scroll" data-scroll>
+        <section id="nearby-places" class="mb-5 p-4 rounded shadow-sm animate-on-scroll">
             <h2 class="text-center mb-4 section-title">Places Near You</h2>
             <div id="nearby-loader" class="text-center animate-on-scroll">
                 <div class="spinner-border text-primary" role="status">
@@ -80,7 +78,7 @@
         </section>
 
         <!-- All Destinations Section -->
-        <section id="destinations" class="animate-on-scroll" data-scroll>
+        <section id="destinations" class="animate-on-scroll">
             <h2 class="text-center mb-4 section-title">Other Destinations</h2>
             <div id="places-container" class="row g-4">
                 <!-- Destination cards will be injected here by JavaScript -->
@@ -92,7 +90,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-4 mt-5" data-scroll-section>
+    <footer class="bg-dark text-white text-center p-4 mt-5">
         <p>&copy; 2025 Backpackers Travels. All Rights Reserved.</p>
     </footer>
 
@@ -102,14 +100,6 @@
     <script src="js/galleryLoader.js"></script>
     <script src="js/main.js"></script>
     <script src="js/chatbot.js"></script>
-    <!-- Locomotive Scroll JS -->
-    <script src="node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
-    <script>
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true
-        });
-    </script>
 
     <!-- Chatbase Widget Script - DISABLED -->
     <!--
