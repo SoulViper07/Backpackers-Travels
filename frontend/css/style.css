@@ -308,7 +308,7 @@ main.container {
     }
 
     #cycling-subheading {
-        min-height: 100px; /* Increased min-height for Android interfaces */
+        min-height: 120px; /* Further increased min-height for Android interfaces */
         font-size: 1.1rem; /* Reduced font size for better fit on small screens */
     }
 
