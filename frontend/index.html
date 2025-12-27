@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="node_modules/locomotive-scroll/dist/locomotive-scroll.min.css">
     <!-- Chatbot CSS -->
     <link rel="stylesheet" href="css/chatbot.css">
     <!-- Google Fonts - Poppins -->
@@ -19,7 +21,7 @@
             <!-- Favicon - Trekking/Hiking Icon -->
             <link rel="icon" href="assets/images/favicon.png">
 </head>
-<body>
+<body data-scroll-container>
     <div id="loader-wrapper">
         <div class="loader"></div>
         <div class="loader-text">Loading Adventure...</div>
@@ -52,7 +54,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section breathes-subtle">
+    <header class="hero-section breathes-subtle" data-scroll-section>
         <div class="container text-center text-white">
             <h1 id="hero-title" class="display-3">Discover Your Next Adventure</h1>
             <p id="cycling-subheading" class="lead cycling-typewriter"></p>
@@ -61,7 +63,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container my-5">
+    <main class="container my-5" data-scroll-section>
         <!-- Nearby Places Section -->
         <section id="nearby-places" class="mb-5 p-4 rounded shadow-sm animate-on-scroll">
             <h2 class="text-center mb-4 section-title">Places Near You</h2>
@@ -100,6 +102,14 @@
     <script src="js/galleryLoader.js"></script>
     <script src="js/main.js"></script>
     <script src="js/chatbot.js"></script>
+    <!-- Locomotive Scroll JS -->
+    <script src="node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
 
     <!-- Chatbase Widget Script - DISABLED -->
     <!--
