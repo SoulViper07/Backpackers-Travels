@@ -307,6 +307,10 @@ main.container {
         font-size: 1.2rem; /* Reduced font size for smaller screens */
     }
 
+    #cycling-subheading {
+        min-height: 100px; /* Increased min-height for Android interfaces */
+    }
+
     /* Further adjustments for navbar elements on small screens */
     .navbar-brand {
         display: flex;
