@@ -12,35 +12,8 @@ function _generateCarouselHtml(images, idPrefix) {
         return `<img src="https://picsum.photos/seed/generic-card-placeholder/800/600" class="dest-img" alt="No image available">`;
     }
 
-    const carouselId = `${idPrefix}-carousel`;
-    const indicators = images.map((_, i) => `
-        <button type="button" data-bs-target="#${carouselId}" data-bs-slide-to="${i}" ${i === 0 ? 'class="active" aria-current="true"' : ''} aria-label="Slide ${i + 1}"></button>
-    `).join('');
-
-    const carouselItems = images.map((imagePath, i) => `
-        <div class="carousel-item ${i === 0 ? 'active' : ''}">
-            <img src="${imagePath}" class="d-block w-100 dest-img" alt="Destination Image">
-        </div>
-    `).join('');
-
-    return `
-        <div id="${carouselId}" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                ${indicators}
-            </div>
-            <div class="carousel-inner">
-                ${carouselItems}
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    `;
+    // Display only the first image instead of a carousel
+    return `<img src="${images[0]}" class="d-block w-100 dest-img" alt="Destination Image">`;
 }
 
 /**
