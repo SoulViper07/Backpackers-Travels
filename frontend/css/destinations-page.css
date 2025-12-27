@@ -1,5 +1,9 @@
 
 /* --- Destinations Page Specific Styles --- */
+.hero-section-short {
+    padding-top: 100px; /* To push content below the fixed navbar */
+}
+
 .hero-section-short h1.display-3 {
     color: #F8F8F8; /* White font color */
     font-weight: 700; /* Make it bolder */
