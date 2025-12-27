@@ -254,6 +254,15 @@
         bottom: 15px;
         right: 15px;
     }
+
+    .chat-input {
+        flex-grow: 0.8; /* Reduce flex-grow to make space */
+        width: 100%; /* Ensure it still takes available space */
+    }
+
+    .send-button, .voice-button {
+        padding: 8px 12px; /* Slightly smaller padding for compactness */
+    }
 }
 
 /* Typing animation */
