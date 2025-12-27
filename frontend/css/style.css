@@ -286,6 +286,10 @@ main.container {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 15px rgba(50, 50, 50, 0.5); /* Dark shadow and subtle dark glow */
 }
 
+#cycling-subheading {
+    min-height: 70px; /* Fixed height to prevent layout shifts during animation */
+}
+
 .navbar-brand .fa-hiking {
     font-size: 2.2rem; /* Make the icon significantly larger */
     vertical-align: middle; /* Align icon with the text */
